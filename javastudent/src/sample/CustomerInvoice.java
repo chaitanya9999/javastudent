@@ -4,32 +4,29 @@ public class CustomerInvoice   {
 	private String name;
 	private String item ;
 	private double price ;
+	
+	
 	private String strt;
 	private int Hno;
 	private int Zpcode;
 	private String cty;
   
 		
-	public CustomerInvoice(String name, String item, double price, String strt, int hno, int zpcode, String cty) {
+	public CustomerInvoice(String name, String item, double price) {
 		super();
 		this.name = name;
 		this.item = item;
 		this.price = price;
-		Address addr = new Address();
-		strt = addr.getStreet();
-		Hno = addr.getHouseno();
-		Zpcode = addr.getZipcode();
-		cty = addr.getCity();
+		
+		Address addr1 = new Address("highstreet", 94538, 802, "fremont");
+		strt = addr1.getStreet();
+		Hno = addr1.getHouseno();
+		Zpcode = addr1.getZipcode();
+		cty = addr1.getCity();
 	}
 		
 		
-		 
-
-	//	addr.setStreet(addr.getCity());
-		
-
-
-	public String getStrt() {
+    public String getStrt() {
 		return strt;
 	}
 	public void setStrt(String strt) {
