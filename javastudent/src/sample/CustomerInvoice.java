@@ -18,7 +18,6 @@ public class CustomerInvoice {
 	
 
 	 public String getStrt() {
-		 System.out.println(addr.getStreet());
 	 return this.addr.getStreet();
 	 }
 	
