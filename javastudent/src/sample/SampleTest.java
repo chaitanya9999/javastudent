@@ -42,10 +42,13 @@ public class SampleTest {
 		
 
 		//Address addr = new Address("highstreet", 94538, 802, "fremont");
-		CustomerInvoice c = new CustomerInvoice("chaitanya", "iphone", 80);
-		System.out.println("name:" + c.getName() + "\n" + "item:" + c.getItem() + "\n" + "price:" + c.getPrice() + "\n"
-				+ "street :" + c.getStrt() + "\n" + "Houseno :" +c.getHno() + "\n"
-				+ "Zipcode:" + c.getZpcode() + "\n" + "city:" + c.getCty() + "");
+		CustomerInvoice c = new CustomerInvoice("chaitanya", "iphone", 80,"highstreet", 94538, 802, "fremont");
+		
+		
+		 System.out.println("name:" + c.getName() + "\n" + "item:" +
+		 c.getItem() + "\n" + "price:" + c.getPrice() + "\n"
+		 + "street :" + c.getStrt() + "\n" + "Houseno :" +c.getHno() + "\n"
+		 + "Zipcode:" + c.getZpcode() + "\n" + "city:" + c.getCty() + "");
 
 	}
 }
