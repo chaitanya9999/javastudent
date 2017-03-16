@@ -1,30 +1,32 @@
 package AudifremontShowroom;
 
-public class carsInventory {
+public class carsInventory extends invoice {
 	private String carmodel;
 	private int caryear;
 	private String carbodytype;
 	private String carcolor;
-	public carsInventory(String carmodel, int caryear, String carbodytype, String carcolor) {
+	public carsInventory(double priceofcar, String description, int quantity, double amountpay, String carmodel,
+			int caryear, String carbodytype, String carcolor) {
+		super(priceofcar, description, quantity, amountpay);
 		this.carmodel = carmodel;
 		this.caryear = caryear;
 		this.carbodytype = carbodytype;
 		this.carcolor = carcolor;
 	}
 	public String getCarmodel() {
-		return this.carmodel;
+		return carmodel;
 	}
 	public void setCarmodel(String carmodel) {
 		this.carmodel = carmodel;
 	}
 	public int getCaryear() {
-		return this.caryear;
+		return caryear;
 	}
 	public void setCaryear(int caryear) {
 		this.caryear = caryear;
 	}
 	public String getCarbodytype() {
-		return this.carbodytype;
+		return carbodytype;
 	}
 	public void setCarbodytype(String carbodytype) {
 		this.carbodytype = carbodytype;
@@ -35,5 +37,8 @@ public class carsInventory {
 	public void setCarcolor(String carcolor) {
 		this.carcolor = carcolor;
 	}
+	
+	
+	 
 	
 }

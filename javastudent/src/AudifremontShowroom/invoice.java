@@ -6,14 +6,13 @@ public class invoice  {
 	private String description;
 	private int quantity;
 	private double amountpay;
-	customers invoice;
-	public invoice(double priceofcar, String description, int quantity, double amountpay, customers inv) {
-		super();
+	
+	
+   public invoice(double priceofcar, String description, int quantity, double amountpay) {
 		this.priceofcar = priceofcar;
 		this.description = description;
 		this.quantity = quantity;
 		this.amountpay = amountpay;
-		this.invoice = inv;
 	}
 	public double getPriceofcar() {
 		return this.priceofcar;
@@ -38,12 +37,6 @@ public class invoice  {
 	}
 	public void setAmountpay(double amountpay) {
 		this.amountpay = amountpay;
-	}
-	public customers getInvoice() {
-		return this.invoice;
-	}
-	public void setInvoice(customers invoice) {
-		this.invoice = invoice;
 	}
 	
 	
